@@ -1,0 +1,189 @@
+/* General body and background settings */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f9; /* Soft, neutral light mode background */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #f0f4f8, #e0e6ed); /* Elegant gradient */
+}
+
+/* Resume container */
+.resume-container {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    display: flex;
+    padding: 20px;
+    position: relative;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Change Theme button inside resume container */
+.color-mode-btn {
+    position: absolute;
+    bottom: 20px; /* Positioned at the bottom inside CV */
+    right: 20px; /* Positioned at the right inside CV */
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue button color */
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.color-mode-btn:hover {
+    background-color: #0056b3; /* Darker hover effect */
+}
+
+/* Left column (smaller) */
+.left-column {
+    flex: 1;
+    padding-right: 20px;
+    border-right: 2px solid #e0e0e0;
+}
+
+/* Right column (larger) */
+.right-column {
+    flex: 2;
+    padding-left: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 3px solid #007bff;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #333333;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #007bff;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+p, ul {
+    font-size: 1.1em;
+    color: #555555;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Button styles */
+button {
+    margin: 15px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212; /* Darker background for dark mode */
+}
+
+body.dark-mode .resume-container {
+    background-color: #1e1e1e; /* Dark gray background for dark mode */
+    color: #e0e0e0; /* Light gray text color */
+}
+
+body.dark-mode h2, body.dark-mode h1 {
+    color: #64b5f6; /* Soft blue color for headings */
+    border-bottom-color: #64b5f6; /* Matching border color */
+}
+
+body.dark-mode p, 
+body.dark-mode li {
+    color: #e0e0e0; /* Light gray for normal text and list items */
+}
+
+body.dark-mode .profile-pic {
+    border-color: #64b5f6; /* Soft blue border for profile picture */
+}
+
+body.dark-mode button {
+    background-color: #64b5f6;
+    color: #1e1e1e; /* Darker text color for buttons */
+}
+
+body.dark-mode button:hover {
+    background-color: #42a5f5; /* Slightly lighter blue for button hover */
+}
+
+/* Media Queries for Mobile */
+@media screen and (max-width: 800px) {
+    .resume-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .left-column, .right-column {
+        padding: 0;
+        border: none;
+    }
+}
+
+/* About Me Section Adjustment */
+#about-me {
+    margin-top: 20px; /* Adjust top margin to balance the section */
+}
+
+/* Centered Show/Hide Button */
+.centered-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.centered-button:hover {
+    background-color: #0056b3;
+}
+
+/* Icons for contact info */
+p i {
+    margin-right: 10px;
+}
